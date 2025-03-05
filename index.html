@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Thư mời đám cưới Nam Yến</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lovus is responsive wedding html website template">
+    <meta name="keywords" content="wedding,couple,ceremony,reception,rsvp,gallery,event,countdown">
+    <meta name="author" content="">
+
+
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+
+
+    <!-- CSS Files
+    ================================================== -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery.countdown.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/animsition.min.css" type="text/css">
+    <link rel="stylesheet" href="rsvp/form.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+
+    <!-- custom background -->
+    <link rel="stylesheet" href="css/bg.css" type="text/css">
+
+    <!-- color scheme -->
+    <link rel="stylesheet" href="css/color.css" type="text/css" id="colors">
+</head>
+
+<body id="homepage">
+
+    <div id="wrapper">
+
+        <!-- header begin -->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- logo begin -->
+                        <div id="logo">
+                            <a href="index.html">
+                                <h2>Quang Vinh<span class="and">&amp;</span>Nguyễn Huệ</h2>
+                            </a>
+                        </div>
+                        <!-- logo close -->
+
+                        <!-- small button begin -->
+                        <span id="menu-btn"></span>
+                        <!-- small button close -->
+
+                        <span class="btn-rsvp">Touch</span>
+
+                        <!-- mainmenu begin -->
+                        
+                        <!-- <nav>
+                            <ul id="mainmenu">
+                                <li><a href="index.html">Lễ cưới nhà gái</a>
+                                </li>
+                                <li><a href="index_boy.html">Lễ cưới nhà trai</a>
+                                </li>
+                            </ul>
+                        </nav> -->
+
+                    </div>
+                    <!-- mainmenu close -->
+
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+
+        <!-- content begin -->
+        <div id="content" class="no-bottom no-top">
+
+            <!-- rsvp popup begin -->
+            <div id="popup-box" class="full-height">
+                <span class="btn-close">
+					<i class="icon_close"></i>
+				</span>
+
+                <div class="container center-y">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="deco id-color"><span>Trân trọng kính mời</span></h2>
+                            <h2 data-wow-delay=".2s">Bạn và gia đình</h2>
+                            <h2 class="deco id-color small-text">Đến dự bữa cơm thân mật <br> chung vui cùng gia đình chúng tôi</h2>
+                        </div>
+
+                        <div class="spacer-double"></div>
+
+                        <div class="col-md-5 col-md-offset-1 text-right">
+                            <h3>Lễ cưới nhà trai</h3>
+                            12:00<br>
+                            Thứ Bảy, ngày 15 tháng 03 năm 2025 <br>
+                            Nhà văn hoá phường Bắc Cường, phố Phố Cù Chính Lan, Bắc Cường, Lào Cai, Vietnam<br>
+                            
+                        </div>
+
+                        <div class="col-md-5">
+                            <h3>Lễ cưới nhà gái</h3>
+                            10:00<br>
+                            Thứ Bảy, ngày 04 tháng 11 năm 2023 <br>
+                            Khách sạn Mường Thanh, thị xã Sa Pa, Lào Cai<br>
+                            
+                        </div>
+
+                        <div class="spacer-double"></div>
+
+                        <form name="rsvp" id='rsvp_form' class="form-underline" method="POST" action="https://script.google.com/macros/s/AKfycbwwOn79_49g1wXYLI0FZZWPjIG5qb-a8BaMy9W9iGjjdf8qn2gSebcj88jt97s_37QlhA/exec">
+                            <div class="col-md-4">
+                                <input type='text' name='name' id='name' class="form-control" placeholder="Họ và tên" required maxlength="50">
+                            </div>
+                            <div class="col-md-4">
+                                <select id="which" name="which" size="1" class="form-control">
+                                    <option value="" disabled selected>Bạn tham dự buổi lễ nào?</option>
+                                    <option>Cả 2 lun</option>
+                                    <option>Lễ cưới nhà trai</option>
+                                    <option>Lễ cưới nhà gái</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select id="guest" name="guest" size="1" class="form-control">
+                                    <option value="" disabled selected>Bạn đi bao nhiêu người nhỉ?</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <div class="spacer-single"></div>
+                                <input type='submit' id='submit' value='Gửi' class="btn btn-custom">
+                                <div id='mail_success' class='success'>Your message has been sent successfully.</div>
+                                <div id='mail_fail' class='error'>Sorry, error occured this time sending your message.</div>
+                            </div>
+                        </form>
+                        <div id="success_message">
+                            <h1>Cảm ơn bạn!</h1>
+                            <p class="pt10"> Hẹn gặp lại bạn ở lễ cưới của chúng mình nhaaaa. </p>
+                        </div>
+                        <div id="error_message">
+                            <h1>Error</h1> Sorry there was an error sending your form.
+                        </div>
+
+                        <div class="spacer-single"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- rsvp popup close -->
+
+            <!-- section begin -->
+            <section id="section-hero" class="full-height relative z1 owl-slide-wrapper no-top no-bottom text-light" data-stellar-background-ratio=".2">
+                <div class="owl-slider-nav">
+                    <div class="next"></div>
+                    <div class="prev"></div>
+                </div>
+
+                <div class="center-y fadeScroll relative" data-scroll-speed="4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <div class="row">
+                                    <div class="spacer-single"></div>
+                                    <div class="col-md-5 text-right text-center-sm relative">
+                                        <h2 class="name">Vinh</h2>
+                                    </div>
+                                    <div class="col-md-2 text-center">
+                                        <span class="deco-big" data-scroll-speed="2">&amp;</span>
+                                    </div>
+                                    <div class="col-md-5 text-left text-center-sm relative">
+                                        <h2 class="name">Huệ</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="custom-owl-slider" class="owl-slide" data-scroll-speed="2">
+                    <div class="item">
+                        <img id="owl-slider-01" src="images use/slider/1.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img id="owl-slider-02" src="images use/slider/2.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+
+
+            <!-- section begin -->
+            <section id="section-couple" class="no-top">
+                <div class="container relative mt-60 z-index">
+                    <div class="row">
+
+                        <div class="col-md-5 col-md-offset-1 text-center">
+                            <img src="images use/misc/1.jpg" alt="" class="img-responsive img-rounded wow fadeInLeft" data-wow-delay=".2s" />
+                            <div class="padding20">
+                                <h2>Nguyễn Huệ</h2>
+                                <p>Chân thành sẽ chạm đến trái tim và hạnh phúc bắt nguồn từ sự tử tế.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 text-center">
+                            <img src="images use/misc/2.jpg" alt="" class="img-responsive img-rounded wow fadeInRight" data-wow-delay=".2s" />
+                            <div class="padding20">
+                                <h2>Quang Vinh</h2>
+                                <p>Thực ra đối với tình yêu, càng đơn thuần sẽ càng hạnh phúc.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 col-md-offset-5 text-center absolute">
+                            <span class="circle wow zoomIn" data-wow-delay=".8s">
+								<i class="fa fa-heart"></i>
+							</span>
+                        </div>
+
+                        <div class="container">
+                            <div class="row wow fadeInUp">
+                                <!-- <div class="col-md-12 text-center">
+                                    <h2 class="deco"><span class="id-color">Đếm ngược ngày cưới</span></h2>
+                                </div> -->
+                                <div class="col-md-8 col-md-offset-2">
+                                    <div class="spacer-double"></div>
+                                    <div id="defaultCountdown" class="wow fadeIn"></div>
+                                    <div class="spacer-single"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- section close -->
+
+            <!-- section begin -->
+            <section id="section-quote" aria-label="section-quote-1" class="text-light" data-stellar-background-ratio=".2">
+                <div class="container">
+                    <div class="row wow fadeInUp">
+                        <div class="col-md-8 col-md-offset-2">
+                            <blockquote class="very-big text-light wow fadeIn">
+                                "Love is like a mountain with many peaks and each new passion brings in a different view. Don't be afraid to love again and again... there are better horizons waiting. Climb until you find your perfect sky."
+                                <span>- Someone in Internet -</span>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+
+            <!-- section begin -->
+            <section aria-label="section" class="no-bottom" id="invitation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="deco"><span>Trân Trọng Kính Mời</span></h2>
+                            <h2 class="id-color invitation-guest">Bạn và gia đình</h2>
+                            <h4 class="">Đến dự lễ thành hôn của hai chúng tôi</h4>
+                            <h2 class="invitation-name" data-wow-delay=".2s">Quang Vinh <span class="id-color">&nbsp;&nbsp;&amp;&nbsp;&nbsp;</span> Nguyễn Huệ</h2>
+                            <!-- <h2 data-wow-delay=".2s">Saturday, 27 November 2021</h2> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+            
+            <!-- section begin -->
+            <section id="section-event">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images use/misc/3.jpg" alt="" class="img-responsive img-rounded wow fadeInLeft">
+                        </div>
+
+                        <div class="col-md-5 col-md-offset-1 pt40 pb40 wow fadeIn" data-wow-delay=".5s">
+                            <h3>Lễ cưới nhà gái</h3>
+                            Thứ Năm, ngày 02 tháng 11 năm 2023<br> 17:00 - 19:00 <br> 513 đường Tuệ Tĩnh, thị trấn Lai Cách, Hải Dương<br>
+                            <a href="https://goo.gl/maps/5hHUk5pRGoFith8x5" class="btn btn-custom mt30" target="_blank">Xem bản đồ</a>
+                        </div>
+                    </div>
+
+                    <div class="spacer-double"></div>
+
+                    <div class="row">
+                        <div class="col-md-5 pt40 pb40 text-right wow fadeIn" data-wow-delay=".5s">
+                            <h3>Lễ cưới nhà trai</h3>
+                            Thứ Bảy, ngày 15 tháng 3 năm 2025<br> 10:00 - 12:00 <br> Nhà văn hoá phường Bắc Cường, Lào Cai<br>
+                            <a href="https://maps.app.goo.gl/poSdSRVTQAegf6Sn9" class="btn btn-custom mt30" target="_blank">Xem bản đồ</a>
+                        </div>
+
+                        <div class="col-md-6 col-md-offset-1">
+                            <img src="images use/misc/4.jpg" alt="" class="img-responsive img-rounded wow fadeInRight">
+                        </div>
+                    </div>
+
+                    <div class="row pt30">
+                        <div class="col-md-12 text-center wow fadeIn">
+                            <span class="btn btn-custom mt30 btn-confirm">Ấn để xác nhận tham gia</span>
+                        </div>
+                    </div>
+                    
+                    <div class="spacer-double"></div>
+                </div>
+            </section>
+            <!-- section close -->
+
+            <!-- section begin -->
+            <section id="section-guestbook" class="text-light" data-stellar-background-ratio=".2">
+                <div class="container relative">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2>Guest Book</h2>
+                            <div class="spacer-single"></div>
+                        </div>
+
+
+                        <div id="testimonial-carousel" class="de_carousel" data-wow-delay=".3s">
+
+                            <div class="col-md-6 item">
+                                <div class="de_testi opt-2">
+                                    <blockquote>
+                                        <p>Mãi bên nhau 2 bạn nhớ ❤️</p>
+                                        <div class="de_testi_by">
+                                            Đặng Phương Nam
+                                        </div>
+                                    </blockquote>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 item">
+                                <div class="de_testi opt-2">
+                                    <blockquote>
+                                        <p>Thay mặt Đảng và Chính phủ, chúc hai đứa mãi hạnh phúc, sớm có tin vui nhé!</p>                                        </p>
+                                        <div class="de_testi_by">
+                                            Phạm Văn Doanh
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 item">
+                                <div class="de_testi opt-2">
+                                    <blockquote>
+                                        <p>Finally, I am waiting for your wedding day. I’m glad you found your happiness. Congratulations!</p>
+                                        <div class="de_testi_by">
+                                            Trần Mạnh Toản
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 item">
+                                <div class="de_testi opt-2">
+                                    <blockquote>
+                                        <p>Thiệp mừng trên tay, bay ngay tạ thóc. Chúc hai bạn có một đám cưới thật hạnh phúc, vui vẻ, luôn bên nhau vượt qua mọi khó khăn thử thách để xây dựng một gia đình đầm ấm.</p>
+                                        <div class="de_testi_by">
+                                            Lê Anh Tuấn
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 item">
+                                <div class="de_testi opt-2">
+                                    <blockquote>
+                                        <p>The wedding is a milestone for a beautiful love affair. I hope you will always be happy with your spouse.</p>
+                                        <div class="de_testi_by">
+                                            Nguyễn Tiến Đạt
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 item">
+                                <div class="de_testi opt-2">
+                                    <blockquote>
+                                        <p>Hôn nhân không phải là một đích đến mà là một cuộc hành trình! Chúc các bạn mãi hạnh phúc bên nhau</p>
+                                        <div class="de_testi_by">
+                                            Nguyễn Linh Giang
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+
+            <section id="section-gallery">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2>Một vài bức hình của chúng tớ</h2>
+                            <div class="spacer-single"></div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="de_tab tab_style_3 text-center">
+                                <ul class="de_nav">
+                                    <!-- <li class="active" data-link="#section-services-tab"><span>The Wedding</span></li> -->
+                                    <!-- <li data-link="#section-services-tab"><span>Our Best Friends</span></li> -->
+                                </ul>
+
+                                <div class="de_tab_content">
+
+                                    <div id="tab1" class="tab_single_content">
+                                        <div class="row">
+
+                                            <div class="col-md-4 text-center mb10">
+                                                <figure class="picframe img-rounded mb20">
+                                                    <a class="image-popup" href="images use/gallery/category-1/1.jpg">
+														<span class="overlay-v">
+															<i></i>
+														</span>
+													</a>
+                                                    <img src="images use/gallery/category-1/1.jpg" class="img-responsive img-rounded" alt="">
+                                                </figure>
+                                            </div>
+
+                                            <div class="col-md-4 text-center mb10">
+                                                <figure class="picframe img-rounded mb20">
+                                                    <a class="image-popup" href="images use/gallery/category-1/2.jpg">
+														<span class="overlay-v">
+															<i></i>
+														</span>
+													</a>
+                                                    <img src="images use/gallery/category-1/2.jpg" class="img-responsive img-rounded" alt="">
+                                                </figure>
+                                            </div>
+
+                                            <div class="col-md-4 text-center mb10">
+                                                <figure class="picframe img-rounded mb20">
+                                                    <a class="image-popup" href="images use/gallery/category-1/3.jpg">
+														<span class="overlay-v">
+															<i></i>
+														</span>
+													</a>
+                                                    <img src="images use/gallery/category-1/3.jpg" class="img-responsive img-rounded" alt="">
+                                                </figure>
+                                            </div>
+
+                                            <div class="col-md-4 text-center mb10">
+                                                <figure class="picframe img-rounded mb20">
+                                                    <a class="image-popup" href="images use/gallery/category-1/4.jpg">
+														<span class="overlay-v">
+															<i></i>
+														</span>
+													</a>
+                                                    <img src="images use/gallery/category-1/4.jpg" class="img-responsive img-rounded" alt="">
+                                                </figure>
+                                            </div>
+
+                                            <div class="col-md-4 text-center mb10">
+                                                <figure class="picframe img-rounded mb20">
+                                                    <a class="image-popup" href="images use/gallery/category-1/5.jpg">
+														<span class="overlay-v">
+															<i></i>
+														</span>
+													</a>
+                                                    <img src="images use/gallery/category-1/5.jpg" class="img-responsive img-rounded" alt="">
+                                                </figure>
+                                            </div>
+
+                                            <div class="col-md-4 text-center mb10">
+                                                <figure class="picframe img-rounded mb20">
+                                                    <a class="image-popup" href="images use/gallery/category-1/6.jpg">
+														<span class="overlay-v">
+															<i></i>
+														</span>
+													</a>
+                                                    <img src="images use/gallery/category-1/6.jpg" class="img-responsive img-rounded" alt="">
+                                                </figure>
+                                            </div>
+
+                                            <div class="col-md-4 text-center mb10">
+                                                <figure class="picframe img-rounded mb20">
+                                                    <a class="image-popup" href="images use/gallery/category-1/7.jpg">
+														<span class="overlay-v">
+															<i></i>
+														</span>
+													</a>
+                                                    <img src="images use/gallery/category-1/7.jpg" class="img-responsive img-rounded" alt="">
+                                                </figure>
+                                            </div>
+
+                                            <div class="col-md-4 text-center mb10">
+                                                <figure class="picframe img-rounded mb20">
+                                                    <a class="image-popup" href="images use/gallery/category-1/8.jpg">
+														<span class="overlay-v">
+															<i></i>
+														</span>
+													</a>
+                                                    <img src="images use/gallery/category-1/8.jpg" class="img-responsive img-rounded" alt="">
+                                                </figure>
+                                            </div>
+
+                                            <div class="col-md-4 text-center mb10">
+                                                <figure class="picframe img-rounded mb20">
+                                                    <a class="image-popup" href="images use/gallery/category-1/9.jpg">
+														<span class="overlay-v">
+															<i></i>
+														</span>
+													</a>
+                                                    <img src="images use/gallery/category-1/9.jpg" class="img-responsive img-rounded" alt="">
+                                                </figure>
+                                            </div>
+
+                                            <div class="col-md-4 text-center mb10">
+                                                <figure class="picframe img-rounded mb20">
+                                                    <a class="image-popup" href="images use/gallery/category-1/10.jpg">
+														<span class="overlay-v">
+															<i></i>
+														</span>
+													</a>
+                                                    <img src="images use/gallery/category-1/10.jpg" class="img-responsive img-rounded" alt="">
+                                                </figure>
+                                            </div>
+
+                                            <div class="col-md-4 text-center mb10">
+                                                <figure class="picframe img-rounded mb20">
+                                                    <a class="image-popup" href="images use/gallery/category-1/11.jpg">
+														<span class="overlay-v">
+															<i></i>
+														</span>
+													</a>
+                                                    <img src="images use/gallery/category-1/11.jpg" class="img-responsive img-rounded" alt="">
+                                                </figure>
+                                            </div>
+
+                                            <div class="col-md-4 text-center mb10">
+                                                <figure class="picframe img-rounded mb20">
+                                                    <a class="image-popup" href="images use/gallery/category-1/12.jpg">
+														<span class="overlay-v">
+															<i></i>
+														</span>
+													</a>
+                                                    <img src="images use/gallery/category-1/12.jpg" class="img-responsive img-rounded" alt="">
+                                                </figure>
+                                            </div>
+
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!-- content close -->
+
+        <!-- footer begin -->
+        <footer>
+            <div class="container text-center text-light">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 id="bottom" class="hs1 wow fadeInUp">Quang Vinh<br><span>&amp;</span><br>Nguyễn Huệ</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subfooter">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-12">
+                            &copy; Copyright 2023 - Sang Kaito
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer close -->
+
+        <a href="#" id="back-to-top"></a>
+        <div id="preloader">
+            <div class="preloader1"></div>
+        </div>
+    </div>
+	
+	<audio loop="loop" autoplay="autoplay">
+		<source src="music/Feels Like a Wedding Day.mp3" type="audio/mpeg" />
+	</audio>
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/enquire.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.plugin.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/countdown-custom.js"></script>
+    <script src="js/animsition.min.js"></script>
+    <script src="js/designesia.js"></script>
+    <script src="rsvp/form.js"></script>
+    <script src="js/custom_js.js"></script>
+
+</body>
+
+</html>

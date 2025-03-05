@@ -1,0 +1,38 @@
+#invitation h1 {
+    font-family: "Great Vibes";
+}
+
+#section-event {
+    padding-top: 20px;
+}
+
+#section-event .place {
+    line-height: 30px;
+    margin: 0px;
+    font-weight: normal;
+}
+
+#popup-box .small-text {
+    line-height: 25px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    #invitation .invitation-guest {
+        font-size: 40px;
+    }
+
+    #invitation .invitation-name {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+	#invitation .invitation-guest {
+        font-size: 35px;
+    }
+
+    #invitation .invitation-name {
+        font-size: 35px;
+    }
+}
